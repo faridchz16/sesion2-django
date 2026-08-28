@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+
+{% block title %}Productos - Tienda de Barrio{% endblock %}
+
+{% block content %}
+<h2>Listado de Productos</h2>
+<a href="{% url 'producto_create' %}" class="btn">Agregar Producto</a>
+
+{% if productos %}
+<table>
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Nombre</th>
+            <th>Descripción</th>
+            <th>Precio</th>
+            <th>Stock</th>
+            <th>Categoría</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for producto in productos %}
+        <tr>
+            <td>{{ producto.id }}</td>
+            <td>{{ producto.nombre }}</td>
+            <td>{{ producto.descripcion }}</td>
+            <td>${{ producto.precio|floatformat:2 }}</td>
+            <td>{{ producto.stock }}</td>
+            <td>{{ producto.categoria }}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+<p>Total de productos: {{ productos|length }}</p>
+{% else %}
+<p>No hay productos registrados.</p>
+{% endif %}
+{% endblock %}

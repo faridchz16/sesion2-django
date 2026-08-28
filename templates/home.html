@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block title %}Inicio - Tienda de Barrio{% endblock %}
+
+{% block content %}
+<h2>Bienvenido a la Tienda de Barrio</h2>
+<p>Esta es una aplicación de ejemplo para gestionar productos de una tienda de barrio.</p>
+<p>Funcionalidades disponibles:</p>
+<ul>
+    <li><a href="{% url 'producto_list' %}">Ver listado de productos</a></li>
+    <li><a href="{% url 'producto_create' %}">Agregar nuevo producto</a></li>
+</ul>
+{% endblock %}
