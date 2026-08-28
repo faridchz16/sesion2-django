@@ -89,3 +89,14 @@ Acceder a:
 - Inicio: http://127.0.0.1:8000/
 - Productos: http://127.0.0.1:8000/store/
 - Agregar: http://127.0.0.1:8000/store/crear/
+
+## Capturas de pantalla (Ejercicio 9)
+
+### 1. Listado de productos
+![Listado](capturas/listado.png)
+
+### 2. Formulario de creación
+![Formulario](capturas/formulario.png)
+
+### 3. Nuevo registro reflejado en el listado
+![Nuevo registro](capturas/nuevo_registro.png)
