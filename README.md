@@ -93,10 +93,13 @@ Acceder a:
 ## Capturas de pantalla (Ejercicio 9)
 
 ### 1. Listado de productos
-![Listado](capturas/listado.png)
+
+![Listado](capturas/listado.png.png)
 
 ### 2. Formulario de creación
-![Formulario](capturas/formulario.png)
+
+![Formulario](capturas/formulario.png.png)
 
 ### 3. Nuevo registro reflejado en el listado
-![Nuevo registro](capturas/nuevo_registro.png)
+
+![Nuevo registro](capturas/nuevo_registro.png.png)
